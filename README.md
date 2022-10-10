@@ -1,6 +1,8 @@
-# fichascript
+# fichaScript
 
-This template should help get you started developing with Vue 3 in Vite.
+fichaScript is a personal project to learn tools as Vue 3 and TailwindCSS, as much as Git.
+
+It's a character sheet web app for Tormenta20, a brazilian tabletop RPG.
 
 ## Recommended IDE Setup
 
