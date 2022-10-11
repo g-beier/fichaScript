@@ -10,8 +10,8 @@ export const useMainStore = defineStore("MainStore", () => {
     const charAge = ref(undefined);
     const charAlignment = ref(undefined);
     const charExperience = ref(0);
-    const charClasses = ref([]);
-    const charOrigin = ref(undefined);
+    const charJobs = ref([]);
+    const charBackground = ref(undefined);
     const level = ref(1);
 
     const halfLevel = computed(() => Math.floor(level.value / 2));
@@ -59,7 +59,7 @@ export const useMainStore = defineStore("MainStore", () => {
 
     const skills = reactive([
         defaultSkill("Acrobacia", dex, { armorPenalty: true }),
-        defaultSkill("Adestrar", cha, { onlyTrained: true }),
+        defaultSkill("Adestramento", cha, { onlyTrained: true }),
         defaultSkill("Atletismo", str, { armorPenalty: true }),
         defaultSkill("Atuação", cha),
         defaultSkill("Conhecimento", int, { onlyTrained: true }),
@@ -90,5 +90,5 @@ export const useMainStore = defineStore("MainStore", () => {
         defaultSkill("Vontade", wis),
     ]);
 
-    return { level, str, dex, con, int, wis, cha, skills };
+    return { level, str, dex, con, int, wis, cha, skills, charBackground };
 });
